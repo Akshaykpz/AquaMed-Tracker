@@ -50,7 +50,7 @@ class _WaterProgressChartState extends State<WaterProgressChart> {
                 xValueMapper: (ChartData data, _) => data.category,
                 //reming
                 yValueMapper: (ChartData data, _) => data.value,
-                //convert percetage in data
+
                 dataLabelMapper: (ChartData data, _) =>
                     //fixed using in number show
                     '${((data.value / _waterGoal) * 100).toStringAsFixed(0)}%',

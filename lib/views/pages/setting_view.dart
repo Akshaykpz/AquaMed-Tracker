@@ -7,7 +7,7 @@ import 'package:ihydrate_application/boxes/box.dart';
 import 'package:ihydrate_application/views/pages/history_view.dart';
 import 'package:ihydrate_application/views/widgets/edit_goals.dart';
 import 'package:ihydrate_application/views/widgets/about.dart';
-import 'package:ihydrate_application/views/widgets/Static.dart';
+import 'package:ihydrate_application/views/widgets/static_items.dart';
 
 import 'package:quickalert/models/quickalert_type.dart';
 import 'package:quickalert/widgets/quickalert_dialog.dart';
@@ -56,11 +56,7 @@ class _MyHomeState extends State<MyHome> {
 
   int selectedpage = 0;
 
-  final _pages = [
-    const MyHomePage(),
-    const MyHistory1(),
-    const WaterProgressChart()
-  ];
+  final _pages = [MyHomePage(), const MyHistory1(), const WaterProgressChart()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -218,7 +214,7 @@ class _MyHomeState extends State<MyHome> {
         height: 55,
         // buttonBackgroundColor: Colors.white,
         animationCurve: Curves.linearToEaseOut,
-        items: const <Widget>[
+        items: const [
           Icon(
             Icons.home,
             size: 30,
